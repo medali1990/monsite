@@ -1,0 +1,15 @@
+oc_platform_home:
+    path:      /platform
+    defaults:  { _controller: ocplatformBundle:Advert:index }
+    
+oc_platform_view:
+    path:      /platform/advert/{id}
+    defaults:  { _controller: ocplatformBundle:Advert:view }
+    
+oc_platform_add:
+    path:      /platform/add
+    defaults:  { _controller: ocplatformBundle:Advert:add }
+
+oc_platform_profil:
+    path:      /platform/profil/{nom}/{prenom}/{date}
+    defaults:  { _controller: ocplatformBundle:Advert:viewSlug }
